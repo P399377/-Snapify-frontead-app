@@ -64,7 +64,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "http://localhost:3002/auth/register",
+      "https://snapify-social-api.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
